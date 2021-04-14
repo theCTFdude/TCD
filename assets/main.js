@@ -24,8 +24,14 @@ for (i = 0; i < close.length; i++) {
 
 
 // Go to
-function Goto() {
+function Goto_general() {
   document.getElementById('general').scrollIntoView({
       behavior: 'smooth'
     });
+}
+
+function Goto_web() {
+  document.getElementById('web').scrollIntoView({
+    behavior: 'smooth'
+  });
 }
