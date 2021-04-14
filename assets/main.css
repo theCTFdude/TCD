@@ -13,12 +13,12 @@ html {
     padding: 0;
     margin: 0;
     color: var(--font-color);
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Roboto Mono';
     font-weight: bold;
-    /* height: 1500px; */
     color: var(--font-color);
     /* height: 1500px; */
     touch-action: manipulation;
@@ -65,13 +65,17 @@ body {
     word-wrap: break-word;
     text-align: center;
     line-height: 60px;
-
 }
 
 #flag {
-    color: red;
+    color: var(--blueMain);
 }
 
+/* quote in index.html */
+i {
+    color: var(--blueMain);
+    font-size: 26px;
+}
 
 .alert {
     background-color: red;
@@ -109,7 +113,12 @@ body {
     height: 60px;
     line-height: 60px;
     background-color: #f5f5f5;
-    box-shadow: 0px 8px 100px black;
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 0%),
+     0 6.7px 5.3px rgb(0 0 0 / 1%),
+      0 12.5px 10px rgb(0 0 0 / 5%),
+       0 22.3px 17.9px rgb(0 0 0 / 0%),
+        0 41.8px 33.4px rgb(0 0 0 / 1%),
+         0 100px 80px rgb(0 0 0 / 2%);
 }
 
 .footer > .container {
@@ -151,11 +160,6 @@ body {
 
 
 /* about.html */
-header {}
-
-#banner {}
-
-
 #banner-text {
     width: 60%;
     color: var(--font-color);
@@ -205,29 +209,6 @@ header {}
 
 
 
-
-
-
-.fa {
-    padding: 10px;
-    font-size: 40%;
-    position: relative;
-    /* width: 50px; */
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    color: black;
-}
-
-.fa:hover {
-    text-decoration: underline;
-    /* color: var(--blueMain); */
-}
-  
-
-
-
-
 /* resources.html */
 
 #content {
@@ -255,9 +236,22 @@ header {}
     transform: scale(1.05);
 }
 
+.fa {
+    padding: 10px;
+    font-size: 40%;
+    position: relative;
+    /* width: 50px; */
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: black;
+}
+
+.fa:hover {}
+  
 
 .row {
-    width: 75%;
+    width: 80%;
     padding: 40px 20px;
 }
 
@@ -284,36 +278,26 @@ a {
     transform: translate(0px, 2px);
 }
 
+.cat {
+    font-weight: bold;
+    color: var(--blueMain);
+    text-decoration: underline;
+}
 
 
 
 /* responsive */
 
 @media only screen and (min-width: 493px) {
-    body {
-        /* background-image: url(/assets/images/bg.svg); */
-    }
 }
 
 @media only screen and (min-width: 500px) {
-    body {
-        /* background-image: url(/assets/images/bg.svg); */
-    }
 }
 
 @media only screen and (min-width: 600px) {
-    body {
-        /* background-image: url(/assets/images/bg.svg); */
-    }
 }
 
 @media only screen and  (min-width: 768px) {
-    body {
-        /* background-image: url(/assets/images/bg.svg); */
-    }
 }
 @media (min-width: 992px) {
-    body {
-        /* background-image: url(/assets/images/Mainbg.svg); */
-    }
 }
