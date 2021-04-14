@@ -13,12 +13,6 @@ width=device-width, height=device-height"/>
 <title>Resources - theCTFdude</title>
 </head>
 <body>
-  <div class="alert warning">
-    <span class="closebtn">&times;</span>
-      Im not good at making stuff responsive,
-      dont use your phone, why are you using a phone to browse a ctf website anyways?
-  </div>
-
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="">theCTFdude🚩</a>
@@ -58,16 +52,19 @@ width=device-width, height=device-height"/>
             
               <center>
                 <h3>Go to: </h3>
-                    <button onclick="Goto()" type="button" id="btns">#general</button>
+                    <button onclick="Goto_general()" type="button" id="btns">#general</button>
+                    <button onclick="Goto_web()" type="button" id="btns">#web</button>
               </center>
          </div>
      </header>
       <hr>
-          <center>
+
+
+        <center>
           <div class="row">
-            <h3 id="general">general</h3>
-          
-            <div class="card text-dark mb-3" style="max-width: 18rem;">
+            <h3 class="cat" id="general">general</h3>
+            <!-- general resources -->
+             <div class="card text-dark mb-3" style="max-width: 18rem;">
               <div class="card-header">./John Hammond</div>
               <div class="logos fa fa-youtube fa-lg"></div>
               <div class="card-body">
@@ -87,11 +84,253 @@ width=device-width, height=device-height"/>
               </div>
             </div>
             
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./NahamSec</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #general</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/Nahamsec/">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./Cybersecurity Meg</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #general</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/CybersecurityMeg/">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./DC Cyber Sec</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #general</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/DCcybersec/">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./The Cyber Mentor</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body"> 
+                <h5 class="card-title">Category: #general</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/TheCyberMentor/">Link</a> 
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./The PC Security Channel</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body"> 
+                <h5 class="card-title">Category: #general</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/thepcsecuritychannel/">Link</a> 
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./DEFCONConference</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body"> 
+                <h5 class="card-title">Category: #general</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/user/DEFCONConference/">Link</a> 
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./Black Hat</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body"> 
+                <h5 class="card-title">Category: #general</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/BlackHatOfficialYT/">Link</a> 
+              </div>
+            </div>
+            
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./Security BSides San Francisco</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body"> 
+                <h5 class="card-title">Category: #general</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/BSidesSFTV/">Link</a> 
+              </div>
+            </div>
+            
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./echoCTF</div>
+              <div class="logos fa fa-window-maximize fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #general</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://echoctf.red/">Link</a>
+              </div>
+            </div>
+            
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./Hackthebox</div>
+              <div class="logos fa fa-window-maximize fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #general</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.hackthebox.eu/">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./TryHackMe</div>
+              <div class="logos fa fa-window-maximize fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #general</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.tryhackme.com">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./vickie li's blog</div>
+              <div class="logos fa fa-window-maximize fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #general</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://vickieli.dev/">Link</a>
+              </div>
+            </div>
+            <hr>
 
 
 
-            <!-- other categories here -->
 
+            <h3 class="cat" id="web">web</h3>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./codingo</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/codingo/">Link</a>
+              </div>
+            </div>
+            
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./Farah Hawa</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/FarahHawa/">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./The XSS rat</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/TheXSSrat/">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./Hacksplained</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/Hacksplained/">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./Rana Khalil</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/RanaKhalil101/">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./Tib3rius</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/Tib3rius/">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./Zeta Two</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/ZetaTwo/">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./PwnFunction</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/PwnFunction/">Link</a>
+              </div>
+            </div>
+            
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./STÖK</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/stokfredrik">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./Vickie Li Dev</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/VickieLiDev/">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./Reconless</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/channel/UCCp25j1Zh9vc_WFm-nB9fhQ/">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./InsiderPhD</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href=" https://www.youtube.com/c/InsiderPhD/">Link</a>
+              </div>
+            </div>
+
+          
 
           </div>
         </center>
