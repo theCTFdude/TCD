@@ -10,7 +10,7 @@
 }
 
 html {
-    padding: 0;
+    padding: 0; 
     margin: 0;
     color: var(--font-color);
     scroll-behavior: smooth;
@@ -33,6 +33,7 @@ body {
     
 }
 
+
 .nav-link {
     font-size: 20px;
     margin-left: 20px;
@@ -40,11 +41,11 @@ body {
 
 .nav-link:hover {
     text-decoration: underline;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .nav-link:active {
-    transform: scale(10px);
+    transform: scale(5px);
 }
 
 .navbar-brand {
@@ -160,26 +161,19 @@ i {
 
 
 /* about.html */
-#banner-text {
+#about-text {
     width: 60%;
     color: var(--font-color);
-    font-size: 25px;
+    font-size: 30px;
     word-wrap: break-word;
     overflow: hidden;
     margin-left: 5%;
-    top: 15%;
+    /* top: 15%; */
     position: sticky;
     flex: 0 0 48%;
     justify-content: space-around;
     /* background-color: #e6e6e6; */
-    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 0%),
-     0 6.7px 5.3px rgb(0 0 0 / 1%),
-      0 12.5px 10px rgb(0 0 0 / 5%),
-       0 22.3px 17.9px rgb(0 0 0 / 0%),
-        0 41.8px 33.4px rgb(0 0 0 / 1%),
-         0 100px 80px rgb(0 0 0 / 2%);
-
-    border-radius: 16px;
+    line-height: 60px;
 }
 
 #typeWriter {
@@ -251,7 +245,7 @@ i {
   
 
 .row {
-    width: 80%;
+    width: 70%;
     padding: 40px 20px;
 }
 
@@ -284,20 +278,18 @@ a {
     text-decoration: underline;
 }
 
-
-
-/* responsive */
-
-@media only screen and (min-width: 493px) {
-}
-
-@media only screen and (min-width: 500px) {
-}
-
-@media only screen and (min-width: 600px) {
-}
-
-@media only screen and  (min-width: 768px) {
-}
-@media (min-width: 992px) {
+#BackBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: var(--blueMain);
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 4px;
 }
