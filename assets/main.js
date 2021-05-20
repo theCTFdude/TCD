@@ -4,26 +4,6 @@ document.addEventListener('touchmove', function (event) {
 }, { passive: false });
 
 
-// alert 
-// var close = document.getElementsByClassName("closebtn");
-// var i;
-
-// for (i = 0; i < close.length; i++) {
-
-//   close[i].onclick = function(){
-
-//     var div = this.parentElement;
-//     div.style.opacity = "0";
-
-//     setTimeout(function() 
-//     {
-//         div.style.display = "none"; 
-//     }, 600);
-//   }
-// }
-
-
-
 // Scroll to top btn
 var mybutton = document.getElementById("BackBtn");
 
@@ -40,7 +20,6 @@ function scrollFunction() {
 
   }
 }
-
 
 function BackBtn() {
   document.body.scrollTop = 0;
@@ -62,3 +41,14 @@ function Goto_web() {
   });
 }
 
+function Goto_reverse() {
+  document.getElementById('reverse').scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+
+function Goto_forensics() {
+  document.getElementById('forensics').scrollIntoView({
+    behavior: 'smooth'
+  });
+}
