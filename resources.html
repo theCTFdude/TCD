@@ -25,7 +25,7 @@ width=device-width, height=device-height"/>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                 <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                 <a class="nav-link" href="index.html">Home</a>
                 </li>
 
                 <li class="nav-item">
@@ -33,7 +33,7 @@ width=device-width, height=device-height"/>
                 </li>
 
                 <li class="nav-item">
-                <a class="nav-link active" href="resources.html">Resources</a>
+                <a class="nav-link active" aria-current="page" href="resources.html">Resources</a>
               </li>
             </ul>
 
@@ -49,16 +49,23 @@ width=device-width, height=device-height"/>
           <span id="typeWriter">root@Resources~#</span>
 
           <div id="categories">
-            
               <center>
                 <h3>Go to: </h3>
                     <button onclick="Goto_general()" type="button" id="btns">#general</button>
                     <button onclick="Goto_web()" type="button" id="btns">#web</button>
+                    <button onclick="Goto_reverse()" type="button" id="btns">#reverse</button>
+                    <button onclick="Goto_forensics()" type="button" id="btns">#forensics</button>
               </center>
          </div>
      </header>
-      <hr>
+  <hr>
 
+      <button onclick="BackBtn()" id="BackBtn">⬆️</button>
+
+      <!-- hover sound -->
+      <audio id="sound" preload="auto">
+          <source id="clip" src="/assets/sound.mp3">
+      </audio>
 
         <center>
           <div class="row">
@@ -152,8 +159,18 @@ width=device-width, height=device-height"/>
                 <p class="card-text"></p> 
                 <a target="_blank" href="https://www.youtube.com/c/BlackHatOfficialYT/">Link</a> 
               </div>
-            </div>
+            </div> 
             
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./Loi Liang Yang</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="card-body"> 
+                <h5 class="card-title">Category: #general</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/LoiLiangYang">Link</a> 
+              </div>
+            </div>
+
             <div class="card text-dark mb-3" style="max-width: 18rem;">
               <div class="card-header">./Security BSides San Francisco</div>
               <div class="logos fa fa-youtube fa-lg"></div>
@@ -165,7 +182,7 @@ width=device-width, height=device-height"/>
             </div>
             
             <div class="card text-dark mb-3" style="max-width: 18rem;">
-              <div class="card-header">./echoCTF</div>
+              <div class="card-header">./echoCTF (Challenges)</div>
               <div class="logos fa fa-window-maximize fa-lg"></div>
               <div class="card-body">
                 <h5 class="card-title">Category: #general</h5>
@@ -175,7 +192,7 @@ width=device-width, height=device-height"/>
             </div>
             
             <div class="card text-dark mb-3" style="max-width: 18rem;">
-              <div class="card-header">./Hackthebox</div>
+              <div class="card-header">./Hackthebox (Challenges)</div>
               <div class="logos fa fa-window-maximize fa-lg"></div>
               <div class="card-body">
                 <h5 class="card-title">Category: #general</h5>
@@ -185,7 +202,7 @@ width=device-width, height=device-height"/>
             </div>
 
             <div class="card text-dark mb-3" style="max-width: 18rem;">
-              <div class="card-header">./TryHackMe</div>
+              <div class="card-header">./TryHackMe (Challenges)</div>
               <div class="logos fa fa-window-maximize fa-lg"></div>
               <div class="card-body">
                 <h5 class="card-title">Category: #general</h5>
@@ -326,12 +343,199 @@ width=device-width, height=device-height"/>
               <div class="card-body">
                 <h5 class="card-title">Category: #web</h5>
                 <p class="card-text"></p> 
-                <a target="_blank" href=" https://www.youtube.com/c/InsiderPhD/">Link</a>
+                <a target="_blank" href="https://www.youtube.com/c/InsiderPhD/">Link</a>
               </div>
             </div>
 
-          
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./OverTheWire: Natas (Challenges)</div>
+              <div class="logos fa fa-window-maximize fa-lg"></div>
+              <div class="logos fa fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://overthewire.org/wargames/natas/">Link</a>
+              </div>
+            </div>
 
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./PortSwigger Academy</div>
+              <div class="logos fa fa-window-maximize fa-lg"></div>
+              <div class="logos fa fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://portswigger.net/web-security/">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./HackOne: Hacker101 Playlist</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="logos fa fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/playlist?list=PLxhvVyxYRviZd1oEA9nmnilY3PhVrt4nj">Link</a>
+              </div>
+            </div> 
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./TryHackMe OWASP TOP10</div>
+              <div class="logos fa fa-window-maximize fa-lg"></div>
+              <div class="logos fa fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://tryhackme.com/room/owasptop10">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./Ebrahem Hegazy(AR)</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="logos fa fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/channel/UC1NGYkv1QpTEc8k5ks4cU4Q">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./k0imet: CTF-BIBLE/Web</div>
+              <div class="logos fa fa-github fa-lg"></div>
+              <div class="logos fa fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #web</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://github.com/k0imet/CTFs/tree/main/CTF-BIBLE/Web">Link</a>
+              </div>
+            </div>
+
+            <hr>
+
+
+
+
+            <h3 class="cat" id="reverse">reverse</h3>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./LiveOverflow </div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="logos fa fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #reverse</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/channel/UClcE-kVhqyiHCcjYwcpfj9w">Link</a>
+              </div>
+            </div>
+            
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./CoolCamera</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="logos fa fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #reverse</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/playlist?list=PLMB3ddm5Yvh3gf_iev78YP5EPzkA3nPdL">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./247CTF</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="logos fa fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #reverse</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/247CTF">Link</a>
+              </div>
+            </div>
+            
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./stacksmashing</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="logos fa fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #reverse</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/c/stacksmashing/">Link</a>
+              </div>
+            </div>
+            
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./CryptoCat</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="logos fa fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #reverse</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/channel/UCEeuul0q7C8Zs5C8rc4REFQ">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./Bbinfosec Reverse Resources</div>
+              <div class="logos fa fa-medium fa-lg"></div>
+              <div class="logos fa fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #reverse</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://medium.com/@vignesh4303/reverse-engineering-resources-beginners-to-intermediate-guide-links-f64c207505ed">Link</a>
+              </div>
+            </div>
+            
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./Team fr334aks: BinExpRev</div>
+              <div class="logos fa fa-github fa-lg"></div>
+              <div class="logos fa fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #reverse</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://github.com/fr334aks/100-days-of-Hacking/tree/main/1.Resources/BinExpRev">Link</a>
+              </div>
+            </div>
+
+            <hr>
+
+            <h3 class="cat" id="forensics">forensics</h3>
+            
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./13Cubed</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="logos fa fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #forensics</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/user/davisrichardg">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./DFIR.Science</div>
+              <div class="logos fa fa-youtube fa-lg"></div>
+              <div class="logos fa fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #forensics</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://www.youtube.com/channel/UCOSFVxvpr3OPiaJSwHWN8BQ">Link</a>
+              </div>
+            </div>
+
+            <div class="card text-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">./DFIR.Science - Website</div>
+              <div class="logos fa fa-window-maximize fa-lg"></div>
+              <div class="logos fa fa-lg"></div>
+              <div class="card-body">
+                <h5 class="card-title">Category: #forensics</h5>
+                <p class="card-text"></p> 
+                <a target="_blank" href="https://dfir.science/">Link</a>
+              </div>
+            </div>
+
+            
           </div>
         </center>
 
