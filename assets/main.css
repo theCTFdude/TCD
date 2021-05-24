@@ -210,13 +210,6 @@ i {
 }
 
 .card {
-    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 0%),
-     0 6.7px 5.3px rgb(0 0 0 / 1%),
-      0 12.5px 10px rgb(0 0 0 / 5%),
-       0 22.3px 17.9px rgb(0 0 0 / 0%),
-        0 41.8px 33.4px rgb(0 0 0 / 1%),
-         0 100px 80px rgb(0 0 0 / 2%);
-
     background-color: var(--cardBG);
     /* margin: 5%; */
     /* margin-right: 50%; */
@@ -227,6 +220,13 @@ i {
 .card:hover {
     background-color: #dedcff;
     transform: scale(1.05);
+
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 0%),
+     0 6.7px 5.3px rgb(0 0 0 / 1%),
+      0 12.5px 10px rgb(0 0 0 / 5%),
+       0 22.3px 17.9px rgb(0 0 0 / 0%),
+        0 41.8px 33.4px rgb(0 0 0 / 1%),
+         0 100px 80px rgb(0 0 0 / 2%);
 }
 
 .fa {
