@@ -41,7 +41,6 @@ body {
 
 .nav-link:hover {
     text-decoration: underline;
-    transform: scale(1.02);
 }
 
 .nav-link:active {
