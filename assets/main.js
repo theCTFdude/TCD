@@ -8,7 +8,7 @@ document.addEventListener('touchmove', function (event) {
 var mybutton = document.getElementById("BackBtn");
 
 window.onscroll = function() {
-  scrollFunction()
+  scrollFunction();
 };
 
 function scrollFunction() {
@@ -52,3 +52,10 @@ function Goto_forensics() {
     behavior: 'smooth'
   });
 }
+
+
+// crypto donation Addresses
+const btc = "bitcoin address = bc1qmmezdx0jcywce7cl3x83cs7am8ggps5eemg2q2";
+const eth = "ethereum address = 0x86d828508DB92E0e4a27533337542789FbD44472";
+const link = "chainlink address = 0x86d828508DB92E0e4a27533337542789FbD44472";
+const ltc = "litecoin address = LbvfMk1dsGQtxXqeNsE21u99U9129JfReW";
