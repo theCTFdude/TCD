@@ -55,7 +55,8 @@ function Goto_forensics() {
 
 
 // crypto donation Addresses
-const btc = "bitcoin address = bc1qmmezdx0jcywce7cl3x83cs7am8ggps5eemg2q2";
-const eth = "ethereum address = 0x86d828508DB92E0e4a27533337542789FbD44472";
-const link = "chainlink address = 0x86d828508DB92E0e4a27533337542789FbD44472";
-const ltc = "litecoin address = LbvfMk1dsGQtxXqeNsE21u99U9129JfReW";
+const btc = "Bitcoin address = bc1qmmezdx0jcywce7cl3x83cs7am8ggps5eemg2q2";
+const eth = "Ethereum address = 0x86d828508DB92E0e4a27533337542789FbD44472";
+const link = "Chainlink address = 0x86d828508DB92E0e4a27533337542789FbD44472";
+const ltc = "Litecoin address = LbvfMk1dsGQtxXqeNsE21u99U9129JfReW";
+const usdt = "Tether address = 0x86d828508DB92E0e4a27533337542789FbD44472";
