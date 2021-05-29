@@ -61,13 +61,17 @@ body {
 
 #intro {
     font-size: 40px;
-    position: absolute;
+    position: sticky;
     /* top: 30%; */
     /* left: 50%; */
     overflow: hidden;
     word-wrap: break-word;
     text-align: center;
     line-height: 60px;
+}
+
+.submit-text {
+    position: sticky;
 }
 
 #flag {
@@ -346,4 +350,15 @@ a {
 
 #options-text {
     margin-top: 80px;
+}
+
+
+@media only screen and (max-width: 400px) {
+    #intro , .submit-text{
+        font-size: 30px;
+    }
+
+    .footer {
+        display: none;
+    }
 }
