@@ -42,9 +42,20 @@ body {
     margin-left: 20px;
 }
 
-.nav-link:hover {
-    text-decoration: underline;
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--blueMain);
+    transition: width .3s;
 }
+
+.nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
 
 .nav-link:active {
     transform: scale(5px);
@@ -53,10 +64,6 @@ body {
 .navbar-brand {
     font-size: 25px;
     font-weight: bold;
-}
-
-.active {
-    text-decoration: underline;
 }
 
 #intro {
