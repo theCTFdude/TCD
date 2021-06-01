@@ -303,7 +303,7 @@ a {
 /* donate.html */
 #donation-box {
     background-color: #ebeaff;
-    height: 20rem;
+    height: 22rem;
     width: 20%;
     position: absolute;
     top:0;
@@ -368,4 +368,8 @@ a {
     .footer {
         display: none;
     }
+
+    #options-text {
+        display: none;
+    }    
 }
