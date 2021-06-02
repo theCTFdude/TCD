@@ -28,7 +28,7 @@ function BackBtn() {
 
 
 
-// Go to
+//Go to
 function Goto_general() {
   document.getElementById('general').scrollIntoView({
       behavior: 'smooth'
