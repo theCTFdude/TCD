@@ -305,7 +305,7 @@ a {
     background-color: #ebeaff;
     height: 22rem;
     width: 20%;
-    position: absolute;
+    position: sticky;
     top:0;
 	bottom: 0;
 	left: 0;
@@ -361,15 +361,11 @@ a {
 
 
 @media only screen and (max-width: 400px) {
-    #intro , .submit-text{
-        font-size: 30px;
-    }
 
-    .footer {
-        display: none;
-    }
-
-    #options-text {
-        display: none;
-    }    
+    #intro , .submit-text{font-size: 30px;}
+    #options-text {display: none;}
+    #no-fa {width: 1em;}
+    
+    .footer {display: none;}
+    .alert {font-size: 14px;}
 }
