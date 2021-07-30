@@ -360,7 +360,47 @@ a {
 }
 
 
-@media only screen and (max-width: 400px) {
+/* 404 */
+#Four {animation: animation4 0.90s alternate ease-out infinite;}
+#Zero {animation: animation0 0.90s alternate ease-in-out infinite;}
+#Four2 {animation: animation44 0.90s alternate ease-in-out infinite;}
+
+@keyframes animation4 {100% {transform: translateX(50px);}}
+@keyframes animation0 {100% {transform: translateY(50px);}}
+@keyframes animation44{100% {transform: translateX(-50px);}}
+
+#GoBack {
+    border: none;
+    margin: 30px;
+    border-radius: 4px;
+    height: 5vh;
+    font-size: 23px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #bfcfff;
+}
+
+#GoBack > a {
+    color: var(--font-color);
+}
+
+#GoBack:hover {
+    background-color: snow;
+    transition: 0.70s ease-out;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+#GoBack:active {
+    box-shadow: var(--blueMain) 0px 5px, var(--blueMain) 0px 10px,rgba(0, 0, 0, 0.19) 0px 20px;
+    transition: 0.10s;
+}
+
+
+
+@media only screen and (max-width: 622px) {
+    svg {height: 28vh;}
+}
+
+@media only screen and (max-width: 430px) {
 
     #intro , .submit-text{font-size: 30px;}
     #options-text {display: none;}
