@@ -5,4 +5,4 @@
 
 ![](https://user-images.githubusercontent.com/33517160/121771687-894df100-cb79-11eb-98f6-d4bb86681d04.png)
 
-#### made with ♥ by ![0xRar](https://github.com/0xRar)
+#### made with ♥ by [0xRar](https://github.com/0xRar)
