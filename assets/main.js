@@ -46,6 +46,8 @@ function Goto_forensics() {
   });
 }
 
+// Temporary
+const paypal = "I no longer own the account, i will remove this option for now";
 
 // crypto donation Addresses
 const btc = "bc1qmmezdx0jcywce7cl3x83cs7am8ggps5eemg2q2";
